@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #4f4f4f;
+  --color-secondary: #333;
+
+  --color-text-action: #fefefe;
+  --color-background-action: #66ac66;
+
+  --color-heading-title: #f3b562;
+  --color-heading-subtitle: #647b64;
+}
+
+body {
+  color: var(--color-primary);
+}
+
+.header-link {
+  color: var(--color-secondary);
+}
+
+.button {
+  color: var(--color-text-action);
+  background-color: var(--color-background-action);
+}
+
+.hero-title {
+  color: var(--color-secondary);
+}
+
+.heading-title {
+  color: var(--color-heading-title);
+}
+
+.heading-subtitle {
+  color: var(--color-heading-subtitle);
+}
