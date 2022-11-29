@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('Montserrat'),
-       url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
-       url('../fonts/montserrat-v25-latin-regular.woff') format('woff');
+    url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin-regular.woff') format('woff');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 500;
   src: local('Montserrat'),
-       url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
-       url('../fonts/montserrat-v25-latin-500.woff') format('woff');
+    url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin-500.woff') format('woff');
 }
 
 @font-face {
@@ -21,14 +21,15 @@
   font-style: italic;
   font-weight: 400;
   src: local('Montserrat'),
-       url('../fonts/montserrat-v25-latin-italic.woff2') format('woff2'),
-       url('../fonts/montserrat-v25-latin-italic.woff') format('woff');
+    url('../fonts/montserrat-v25-latin-italic.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin-italic.woff') format('woff');
 }
 
 :root {
   --color-primary: #4f4f4f;
   --color-secondary: #333;
   --color-invert: #fff;
+  --color-background: #f3f1ee;
 
   --color-text-action: #fefefe;
   --color-background-action: #66ac66;
@@ -48,6 +49,31 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-background);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+/* Header */
+.container {
+  width: 100%;
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .header-link {
@@ -68,25 +94,63 @@ body {
   background-color: var(--color-background-action);
 }
 
+.section {
+  padding: 64px 0;
+}
+
+/* .Hero section */
+.hero-section {
+  padding: 32px 0 64px;
+}
+
 .hero-title {
+  /* margin-top: 0;
+  margin-bottom: 24px; */
+  margin: 0 0 24px;
   color: var(--color-secondary);
   font-size: 36px;
   font-weight: 500;
   line-height: 1.333;
-  /* white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; */
+}
+
+.hero-text {
+  margin: 0 0 40px;
 }
 
 .heading-title {
+  margin: 0 0 8px;
   color: var(--color-heading-title);
   font-size: 24px;
   line-height: 1.333;
 }
 
 .heading-subtitle {
+  margin: 0 0 40px;
   color: var(--color-heading-subtitle);
   font-size: 36px;
   font-weight: 500;
   line-height: 1.333;
+}
+
+/* Advantage section */
+.advantage-card {
+  padding: 32px 40px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.advantage-card:hover {
+  background-color: var(--color-invert);
+}
+
+.advantage-card-img {
+  margin-bottom: 16px;
+}
+
+.advantage-card-title {
+  margin-bottom: 8px;
+}
+
+.advantage-card-text {
+  margin-bottom: 0;
 }

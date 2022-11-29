@@ -6,184 +6,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome UI</title>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/">
-          <img src="./images/logo.svg" alt="Awesome UI logo" />
-        </a>
-        <ul>
-          <li><a class="header-link" href="#">Benefits</a></li>
-          <li><a class="header-link" href="#">Features</a></li>
-          <li><a class="header-link" href="#">About</a></li>
-          <li><a class="header-link" href="#">Team</a></li>
-        </ul>
-      </nav>
-      <button class="button" type="button">Register</button>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <a href="/">
+            <img src="./images/logo.svg" alt="Awesome UI logo" />
+          </a>
+          <ul>
+            <li><a class="header-link" href="#">Benefits</a></li>
+            <li><a class="header-link" href="#">Features</a></li>
+            <li><a class="header-link" href="#">About</a></li>
+            <li><a class="header-link" href="#">Team</a></li>
+          </ul>
+        </nav>
+        <button class="button" type="button">Register</button>
+      </div>
     </header>
     <main>
       <section class="hero-section">
-        <h1 class="hero-title" id="hero-title">
-          Awesome User Interface is what we can apply
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue et
-          eros, pellentesque et. Tristique ullamcorper ac pharetra in nisi sit
-          vivamus lorem.
-        </p>
-        <button class="button" type="button">Get started</button>
-        <img src="./images/hero-image.png" alt="Woman is playing tennis" />
+        <div class="container">
+          <h1 class="hero-title" id="hero-title">
+            Awesome User Interface is what we can apply
+          </h1>
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue et
+            eros, pellentesque et. Tristique ullamcorper ac pharetra in nisi sit
+            vivamus lorem.
+          </p>
+          <button class="button" type="button">Get started</button>
+          <img src="./images/hero-image.png" alt="Woman is playing tennis" />
+        </div>
       </section>
-      <section>
-        <h2 class="heading-title">Advantages</h2>
-        <p class="heading-subtitle">Our Benefits</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
-          vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam
-          donec enim, commodo fermum vitae. Et velit sceleris, commodo fermentum
-          vitae. Et velit sceleris
-        </p>
-        <button class="button" type="button">Get started</button>
-        <ul>
-          <li>
-            <img src="./images/smart-car.svg" alt="" />
-            <h3>Car Rental</h3>
-            <p>
-              Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis
-              vitae
-            </p>
-          </li>
-          <li>
-            <!-- <img src="" alt="" /> -->
-            <h3>Car Rental</h3>
-            <p>
-              Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis
-              vitae
-            </p>
-          </li>
-          <li>
-            <!-- <img src="" alt="" /> -->
-            <h3>Car Rental</h3>
-            <p>
-              Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis
-              vitae
-            </p>
-          </li>
-          <li>
-            <!-- <img src="" alt="" /> -->
-            <h3>Car Rental</h3>
-            <p>
-              Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis
-              vitae
-            </p>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <h2 class="heading-title">Advantages</h2>
+          <p class="heading-subtitle">Our Benefits</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
+            vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam
+            donec enim, commodo fermum vitae. Et velit sceleris, commodo
+            fermentum vitae. Et velit sceleris
+          </p>
+          <button class="button" type="button">Get started</button>
+          <ul>
+            <li>
+              <div class="advantage-card">
+                <img
+                  class="advantage-card-img"
+                  src="./images/smart-car.svg"
+                  alt=""
+                />
+                <h3 class="advantage-card-title">Car Rental</h3>
+                <p class="advantage-card-text">
+                  Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                  quis vitae
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="advantage-card">
+                <img src="./images/smart-car.svg" alt="" />
+                <h3>Car Rental</h3>
+                <p>
+                  Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                  quis vitae
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="advantage-card">
+                <img src="./images/smart-car.svg" alt="" />
+                <h3>Car Rental</h3>
+                <p>
+                  Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                  quis vitae
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="advantage-card">
+                <img src="./images/smart-car.svg" alt="" />
+                <h3>Car Rental</h3>
+                <p>
+                  Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                  quis vitae
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2 class="heading-title">Features</h2>
-        <p class="heading-subtitle">What we can apply</p>
-        <ul>
-          <li>
-            <h3>MOT consectet</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
-              vitae
-            </p>
-          </li>
-          <li>
-            <h3>MOT consectet</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
-              vitae
-            </p>
-          </li>
-          <li>
-            <h3>MOT consectet</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
-              vitae
-            </p>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <h2 class="heading-title">Features</h2>
+          <p class="heading-subtitle">What we can apply</p>
+          <ul>
+            <li>
+              <h3>MOT consectet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae
+              </p>
+            </li>
+            <li>
+              <h3>MOT consectet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae
+              </p>
+            </li>
+            <li>
+              <h3>MOT consectet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <img
-          src="./images/about-us-image.jpg"
-          alt="Team members are discussing project"
-        />
-        <h2 class="heading-title">About us</h2>
-        <p class="heading-subtitle">Who we are</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
-          vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam
-          donec enim, commodo fermentum vitae. Et velit sceleris, commodo entum
-          vitaefermentum vitae. Et velit sceleris nullam aliquet dignissim
-        </p>
-        <button type="button">Get started</button>
+      <section class="section">
+        <div class="container">
+          <img
+            src="./images/about-us-image.jpg"
+            alt="Team members are discussing project"
+          />
+          <h2 class="heading-title">About us</h2>
+          <p class="heading-subtitle">Who we are</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
+            vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam
+            donec enim, commodo fermentum vitae. Et velit sceleris, commodo
+            entum vitaefermentum vitae. Et velit sceleris nullam aliquet
+            dignissim
+          </p>
+          <button type="button">Get started</button>
+        </div>
       </section>
-      <section>
-        <h2 class="heading-title">Our Team</h2>
-        <p class="heading-subtitle">How we look like</p>
-        <ul>
-          <li>
-            <img src="#" alt="" />
-            <p>CTO May & Baker</p>
-            <h3>Tayo Oshinuwa</h3>
-            <blockquote>
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
-              vitae“
-            </blockquote>
-          </li>
-          <li>
-            <img src="#" alt="" />
-            <p>CTO May & Baker</p>
-            <h3>Tayo Oshinuwa</h3>
-            <blockquote>
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
-              vitae“
-            </blockquote>
-          </li>
-          <li>
-            <img src="#" alt="" />
-            <p>CTO May & Baker</p>
-            <h3>Tayo Oshinuwa</h3>
-            <blockquote>
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
-              vitae“
-            </blockquote>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <h2 class="heading-title">Our Team</h2>
+          <p class="heading-subtitle">How we look like</p>
+          <ul>
+            <li>
+              <img src="#" alt="" />
+              <p>CTO May & Baker</p>
+              <h3>Tayo Oshinuwa</h3>
+              <blockquote>
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae“
+              </blockquote>
+            </li>
+            <li>
+              <img src="#" alt="" />
+              <p>CTO May & Baker</p>
+              <h3>Tayo Oshinuwa</h3>
+              <blockquote>
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae“
+              </blockquote>
+            </li>
+            <li>
+              <img src="#" alt="" />
+              <p>CTO May & Baker</p>
+              <h3>Tayo Oshinuwa</h3>
+              <blockquote>
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae“
+              </blockquote>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
-      <a href="/">
-        <img src="./images/logo.svg" alt="Awesome UI logo" />
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <p>Copyright &copy; 2022 AWESOME</p>
-      <p>All rights reserved</p>
-      <address>
-        <ul>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="/">
+          <img src="./images/logo.svg" alt="Awesome UI logo" />
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p>Copyright &copy; 2022 AWESOME</p>
+        <p>All rights reserved</p>
+        <address>
+          <ul>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
