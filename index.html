@@ -13,38 +13,51 @@
       rel="stylesheet"
     />
     <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <nav>
-          <a href="/">
-            <img src="./images/logo.svg" alt="Awesome UI logo" />
-          </a>
-          <ul>
-            <li><a class="header-link" href="#">Benefits</a></li>
-            <li><a class="header-link" href="#">Features</a></li>
-            <li><a class="header-link" href="#">About</a></li>
-            <li><a class="header-link" href="#">Team</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Register</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="/">
+              <img src="./images/logo.svg" alt="Awesome UI logo" />
+            </a>
+            <ul class="header-menu">
+              <li><a class="header-link" href="#">Benefits</a></li>
+              <li><a class="header-link" href="#">Features</a></li>
+              <li><a class="header-link" href="#">About</a></li>
+              <li><a class="header-link" href="#">Team</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Register</button>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title" id="hero-title">
-            Awesome User Interface is what we can apply
-          </h1>
-          <p class="hero-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue et
-            eros, pellentesque et. Tristique ullamcorper ac pharetra in nisi sit
-            vivamus lorem.
-          </p>
-          <button class="button" type="button">Get started</button>
-          <img src="./images/hero-image.png" alt="Woman is playing tennis" />
+          <div class="hero-container">
+            <div class="hero-content">
+              <h1 class="hero-title" id="hero-title">
+                Awesome User Interface is what we can apply
+              </h1>
+              <p class="hero-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue
+                et eros, pellentesque et. Tristique ullamcorper ac pharetra in
+                nisi sit vivamus lorem.
+              </p>
+              <button class="button" type="button">Get started</button>
+            </div>
+            <img src="./images/hero-image.png" alt="Woman is playing tennis" />
+          </div>
         </div>
       </section>
       <section class="section">
@@ -110,22 +123,43 @@
         <div class="container">
           <h2 class="heading-title">Features</h2>
           <p class="heading-subtitle">What we can apply</p>
-          <ul>
-            <li>
+          <ul class="features-list">
+            <li class="features-item">
               <h3>MOT consectet</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
                 quis vitae
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3>MOT consectet</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
                 quis vitae
               </p>
             </li>
-            <li>
+            <li class="features-item">
+              <h3>MOT consectet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae
+              </p>
+            </li>
+            <li class="features-item">
+              <h3>MOT consectet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae
+              </p>
+            </li>
+            <li class="features-item">
+              <h3>MOT consectet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae
+              </p>
+            </li>
+            <li class="features-item">
               <h3>MOT consectet</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit

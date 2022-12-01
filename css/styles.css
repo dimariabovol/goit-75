@@ -76,6 +76,30 @@ p {
   padding: 0 16px;
 }
 
+/* Header */
+.header {
+  padding-top: 48px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
 .header-link {
   color: var(--color-secondary);
   text-decoration: none;
@@ -103,6 +127,16 @@ p {
   padding: 32px 0 64px;
 }
 
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
 .hero-title {
   /* margin-top: 0;
   margin-bottom: 24px; */
@@ -111,12 +145,14 @@ p {
   font-size: 36px;
   font-weight: 500;
   line-height: 1.333;
+  text-transform: uppercase;
 }
 
 .hero-text {
   margin: 0 0 40px;
 }
 
+/* Heading */
 .heading-title {
   margin: 0 0 8px;
   color: var(--color-heading-title);
@@ -153,4 +189,18 @@ p {
 
 .advantage-card-text {
   margin-bottom: 0;
+}
+
+/* Features section */
+.features-list {
+  display: flex;
+  gap: 44px;
+  flex-wrap: wrap;
+}
+
+.features-item {
+  padding: 64px 50px 60px;
+  flex-basis: calc((100% - 88px) / 3);
+  background-color: var(--color-invert);
+  border-radius: 8px;
 }
