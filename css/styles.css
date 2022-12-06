@@ -30,6 +30,8 @@
   --color-secondary: #333;
   --color-invert: #fff;
   --color-background: #f3f1ee;
+  --color-brand: #647b64;
+  --color-tertiary: #dfd1c0;
 
   --color-text-action: #fefefe;
   --color-background-action: #66ac66;
@@ -66,6 +68,13 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* Header */
@@ -111,11 +120,32 @@ p {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
   color: var(--color-text-action);
   font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
-  background-color: var(--color-background-action);
+  text-transform: uppercase;
+  fill: currentColor;
+  background-image: linear-gradient(102.3deg, #647b64 -4.62%, #66ac66 178.22%);
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-background-action);
+  background-image: none;
+  background-color: var(--color-text-action);
+}
+
+.button-small {
+  padding: 12px 16px;
+  text-transform: capitalize;
 }
 
 .section {
@@ -179,7 +209,8 @@ p {
   background-color: var(--color-invert);
 }
 
-.advantage-card-img {
+.advantage-card-icon {
+  fill: var(--color-brand);
   margin-bottom: 16px;
 }
 
@@ -199,8 +230,50 @@ p {
 }
 
 .features-item {
-  padding: 64px 50px 60px;
   flex-basis: calc((100% - 88px) / 3);
+}
+
+.features-item:nth-child(even) .feature-card {
+  color: var(--color-invert);
+  fill: var(--color-invert);
+  background-color: var(--color-brand);
+}
+
+/* Feature card */
+.feature-card {
+  padding: 64px 50px 60px;
+  fill: var(--color-brand);
   background-color: var(--color-invert);
   border-radius: 8px;
+}
+
+.feature-card-icon {
+  margin-bottom: 32px;
+}
+
+/* Socials */
+.socials-list {
+  display: flex;
+  gap: 16px;
+}
+
+.socials-item {
+  width: 32px;
+  height: 32px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-tertiary);
+  fill: var(--color-brand);
+  border-radius: 50%;
+}
+
+.socials-link:hover {
+  background-color: var(--color-brand);
+  fill: var(--color-tertiary);
 }
