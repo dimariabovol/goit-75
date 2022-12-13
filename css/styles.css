@@ -212,6 +212,7 @@ img {
 .advantage-card-icon {
   fill: var(--color-brand);
   margin-bottom: 16px;
+  border: 1px solid gray;
 }
 
 .advantage-card-title {
