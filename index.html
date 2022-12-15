@@ -21,6 +21,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -31,10 +32,10 @@
               <img src="./images/logo.svg" alt="Awesome UI logo" />
             </a>
             <ul class="header-menu">
-              <li><a class="header-link" href="#">Benefits</a></li>
-              <li><a class="header-link" href="#">Features</a></li>
-              <li><a class="header-link" href="#">About</a></li>
-              <li><a class="header-link" href="#">Team</a></li>
+              <li><a class="header-link" href="#benefits">Benefits</a></li>
+              <li><a class="header-link" href="#features">Features</a></li>
+              <li><a class="header-link current" href="#about">About</a></li>
+              <li><a class="header-link" href="#team">Team</a></li>
             </ul>
           </nav>
           <button class="button button-small" type="button">Register</button>
@@ -46,7 +47,7 @@
         <div class="container">
           <div class="hero-container">
             <div class="hero-content">
-              <h1 class="hero-title" id="hero-title">
+              <h1 class="hero-title">
                 Awesome User Interface is what we can apply
               </h1>
               <p class="hero-text">
@@ -54,7 +55,7 @@
                 et eros, pellentesque et. Tristique ullamcorper ac pharetra in
                 nisi sit vivamus lorem.
               </p>
-              <button class="button" type="button">
+              <button class="button" type="button" data-modal-open>
                 Get started
                 <svg width="24" height="16">
                   <use href="./images/icons.svg#icon-arrow"></use>
@@ -65,9 +66,9 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section advantages" id="benefits">
         <div class="container">
-          <h2 class="heading-title">Advantages</h2>
+          <h2 class="heading-title" data-aos="fade-right">Advantages</h2>
           <p class="heading-subtitle">Our Benefits</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
@@ -128,9 +129,9 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section features" id="features">
         <div class="container">
-          <h2 class="heading-title">Features</h2>
+          <h2 class="heading-title" data-aos="fade-right">Features</h2>
           <p class="heading-subtitle">What we can apply</p>
           <ul class="features-list">
             <li class="features-item">
@@ -143,6 +144,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
                   quis vitae
                 </p>
+                <!-- <p class="feature-card-text">Lorem ipsum dolor sit.</p> -->
               </div>
             </li>
             <li class="features-item">
@@ -155,6 +157,13 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
                   quis vitae
                 </p>
+                <!-- <div class="feature-card-overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere eum amet consectetur totam sequi alias! Nulla
+                    obcaecati ducimus nemo laudantium.
+                  </p>
+                </div> -->
               </div>
             </li>
             <li class="features-item">
@@ -172,7 +181,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="about">
         <div class="container">
           <img
             src="./images/about-us-image.jpg"
@@ -190,9 +199,9 @@
           <button type="button">Get started</button>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="team">
         <div class="container">
-          <h2 class="heading-title">Our Team</h2>
+          <h2 class="heading-title" data-aos="fade-right">Our Team</h2>
           <p class="heading-subtitle">How we look like</p>
           <ul>
             <li>
@@ -268,5 +277,19 @@
         </address>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close>Close</button>
+        <h2>Залиште свої дані</h2>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
