@@ -196,7 +196,7 @@
             entum vitaefermentum vitae. Et velit sceleris nullam aliquet
             dignissim
           </p>
-          <button type="button">Get started</button>
+          <button class="button" type="button">Get started</button>
         </div>
       </section>
       <section class="section" id="team">
@@ -278,10 +278,83 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" data-modal-close>Close</button>
-        <h2>Залиште свої дані</h2>
+        <div class="modal-container">
+          <button class="modal-close" type="button" data-modal-close>
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h2 class="modal-title">Залиште свої дані</h2>
+          <form name="contact-form" autocomplete="on" novalidate>
+            <label class="form-field-label" for="user-name">Ім'я</label>
+            <div class="form-field">
+              <input
+                class="form-field-input"
+                id="user-name"
+                type="text"
+                name="user-name"
+              />
+              <svg class="form-field-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+
+            <label class="form-field-label" for="user-tel">Телефон</label>
+            <div class="form-field">
+              <input
+                class="form-field-input"
+                id="user-tel"
+                type="tel"
+                name="user-tel"
+              />
+              <svg class="form-field-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+
+            <label class="form-field-label" for="user-email">Пошта</label>
+            <div class="form-field">
+              <input
+                class="form-field-input"
+                id="user-email"
+                type="email"
+                name="user-email"
+              />
+              <svg class="form-field-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+
+            <label class="form-field-label" for="user-comment">Коментар</label>
+            <textarea
+              class="form-field-textarea"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Введіть коментар..."
+            ></textarea>
+
+            <div class="form-field-checkbox">
+              <input
+                id="terms-checkbox"
+                type="checkbox"
+                name="terms-checkbox"
+              />
+              <label for="terms-checkbox"
+                >Погоджуюся з розсилкою та приймаю
+                <a href="#">Умови договору</a></label
+              >
+            </div>
+
+            <button class="form-submit button" type="submit">
+              Get started
+              <svg width="24" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 

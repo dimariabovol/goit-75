@@ -34,7 +34,6 @@
   --color-tertiary: #dfd1c0;
 
   --color-text-action: #fefefe;
-  --color-background-action: #66ac66;
 
   --color-heading-title: #f3b562;
   --color-heading-subtitle: #647b64;
@@ -167,7 +166,7 @@ img {
 }
 
 .button:hover {
-  color: var(--color-background-action);
+  color: var(--color-brand);
   background-image: none;
   background-color: var(--color-text-action);
 }
@@ -228,6 +227,7 @@ img {
   color: var(--color-heading-title);
   font-size: 24px;
   line-height: 1.333;
+  text-transform: uppercase;
 }
 
 .heading-subtitle {
@@ -236,6 +236,7 @@ img {
   font-size: 36px;
   font-weight: 500;
   line-height: 1.333;
+  text-transform: uppercase;
 }
 
 /* Advantage section */
@@ -326,11 +327,11 @@ img {
 /* Feature card */
 .feature-card {
   /* position: relative; */
+  /* overflow: hidden; */
   padding: 64px 50px 60px;
   fill: var(--color-brand);
   background-color: var(--color-invert);
   border-radius: 8px;
-  /* overflow: hidden; */
 }
 
 .feature-card-icon {
@@ -400,20 +401,99 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 528px;
-  height: 100%;
-  max-height: 676px;
-  background-color: var(--color-background);
-}
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 528px;
+  height: 100%;
+  max-height: 676px;
+  padding: 40px;
+  background-color: var(--color-background);
+  overflow-y: auto;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/* Form */
+.form-field-label {
+  margin-bottom: 8px;
+  color: var(--color-primary);
+}
+
+.form-field-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px 0 40px;
+  border: 1px solid #bdbdbd; /* move to css variables */
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-field-textarea {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 24px;
+  padding: 8px 12px;
+  border: 1px solid #bdbdbd; /* move to css variables */
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-field-input:focus {
+  border-color: var(--color-brand);
+}
+
+.form-field-textarea:focus {
+  border-color: var(--color-brand);
+}
+
+.form-field-input:focus + .form-field-icon {
+  fill: var(--color-brand);
+}
+
+.form-field-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.3333;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.form-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.form-field-checkbox {
+  margin-bottom: 24px;
+}
+
+.form-submit {
+  margin: 0 auto;
 }
