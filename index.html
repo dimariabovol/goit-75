@@ -287,7 +287,7 @@
             </svg>
           </button>
           <h2 class="modal-title">Залиште свої дані</h2>
-          <form name="contact-form" autocomplete="on" novalidate>
+          <form class="modal-form" name="contact-form" autocomplete="on">
             <label class="form-field-label" for="user-name">Ім'я</label>
             <div class="form-field">
               <input
@@ -295,6 +295,10 @@
                 id="user-name"
                 type="text"
                 name="user-name"
+                pattern="^[Є-Яа-ї]+\s[Є-Яа-ї]+$"
+                title="Поле повинно містити ім`я та прізвище"
+                placeholder=" "
+                required
               />
               <svg class="form-field-icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-user"></use>
@@ -308,6 +312,9 @@
                 id="user-tel"
                 type="tel"
                 name="user-tel"
+                pattern="^\+[0-9]{12}"
+                placeholder=" "
+                required
               />
               <svg class="form-field-icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -335,16 +342,20 @@
               placeholder="Введіть коментар..."
             ></textarea>
 
-            <div class="form-field-checkbox">
+            <div class="form-field-checkbox checkbox">
               <input
+                class="checkbox-input"
                 id="terms-checkbox"
                 type="checkbox"
                 name="terms-checkbox"
               />
-              <label for="terms-checkbox"
-                >Погоджуюся з розсилкою та приймаю
-                <a href="#">Умови договору</a></label
-              >
+              <svg class="checkbox-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <label class="checkbox-label" for="terms-checkbox">
+                Погоджуюся з розсилкою та приймаю
+                <a href="#">Умови договору</a>
+              </label>
             </div>
 
             <button class="form-submit button" type="submit">

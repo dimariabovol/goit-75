@@ -451,6 +451,16 @@ img {
   outline: none;
 }
 
+/* .form-field-input:not(:placeholder-shown):valid,
+.form-field-input:not(:placeholder-shown):in-range {
+  border-color: green;
+}
+
+.form-field-input:not(:placeholder-shown):invalid,
+.form-field-input:not(:placeholder-shown):out-of-range {
+  border-color: tomato;
+} */
+
 .form-field-textarea {
   width: 100%;
   height: 120px;
@@ -492,6 +502,33 @@ img {
 
 .form-field-checkbox {
   margin-bottom: 24px;
+}
+
+.checkbox {
+  display: flex;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 24px;
+}
+
+.checkbox-icon {
+  position: absolute;
+  margin: 4px 8px 0 0;
+  fill: transparent;
+  border: 2px solid var(--color-primary);
+  border-radius: 2px;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  fill: var(--color-invert);
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
 }
 
 .form-submit {
