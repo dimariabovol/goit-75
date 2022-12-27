@@ -20,25 +20,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="/">
               <img src="./images/logo.svg" alt="Awesome UI logo" />
             </a>
-            <ul class="header-menu">
-              <li><a class="header-link" href="#benefits">Benefits</a></li>
-              <li><a class="header-link" href="#features">Features</a></li>
-              <li><a class="header-link current" href="#about">About</a></li>
-              <li><a class="header-link" href="#team">Team</a></li>
+            <ul class="header__menu">
+              <li><a class="header__link" href="#benefits">Benefits</a></li>
+              <li><a class="header__link" href="#features">Features</a></li>
+              <li>
+                <a class="header__link header__link--current" href="#about">
+                  About
+                </a>
+              </li>
+              <li><a class="header__link" href="#team">Team</a></li>
             </ul>
           </nav>
-          <button class="button button-small" type="button">Register</button>
+          <button class="button button--small" type="button">Register</button>
         </div>
       </div>
     </header>
@@ -79,7 +84,7 @@
           <button class="button" type="button">Get started</button>
           <ul>
             <li>
-              <div class="advantage-card">
+              <article class="advantage-card">
                 <svg class="advantage-card-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-smart-car"></use>
                 </svg>
@@ -88,7 +93,7 @@
                   Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
                   quis vitae
                 </p>
-              </div>
+              </article>
             </li>
             <li>
               <div class="advantage-card">
@@ -275,63 +280,86 @@
             </li>
           </ul>
         </address>
+        <div class="footer__form-field form-field">
+          <label class="form-field__label" for="user-tel">Телефон</label>
+          <div class="form-field__control">
+            <input
+              class="form-field__input"
+              id="user-tel"
+              type="tel"
+              name="user-tel"
+              pattern="^\+[0-9]{12}"
+              placeholder=" "
+              required
+            />
+            <svg class="form-field__icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="modal-container">
-          <button class="modal-close" type="button" data-modal-close>
+        <div class="modal__container">
+          <button class="modal__close" type="button" data-modal-close>
             <svg width="24" height="24">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <h2 class="modal-title">Залиште свої дані</h2>
-          <form class="modal-form" name="contact-form" autocomplete="on">
-            <label class="form-field-label" for="user-name">Ім'я</label>
-            <div class="form-field">
-              <input
-                class="form-field-input"
-                id="user-name"
-                type="text"
-                name="user-name"
-                pattern="^[Є-Яа-ї]+\s[Є-Яа-ї]+$"
-                title="Поле повинно містити ім`я та прізвище"
-                placeholder=" "
-                required
-              />
-              <svg class="form-field-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-user"></use>
-              </svg>
+          <h2 class="modal__title">Залиште свої дані</h2>
+          <form name="contact-form" autocomplete="on">
+            <div class="modal__form-field form-field">
+              <label class="form-field__label" for="user-name">Ім'я</label>
+              <div class="form-field__control">
+                <input
+                  class="form-field__input"
+                  id="user-name"
+                  type="text"
+                  name="user-name"
+                  pattern="^[Є-Яа-ї]+\s[Є-Яа-ї]+$"
+                  title="Поле повинно містити ім`я та прізвище"
+                  placeholder=" "
+                  required
+                />
+                <svg class="form-field__icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
             </div>
 
-            <label class="form-field-label" for="user-tel">Телефон</label>
-            <div class="form-field">
-              <input
-                class="form-field-input"
-                id="user-tel"
-                type="tel"
-                name="user-tel"
-                pattern="^\+[0-9]{12}"
-                placeholder=" "
-                required
-              />
-              <svg class="form-field-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
+            <div class="modal__form-field form-field">
+              <label class="form-field__label" for="user-tel">Телефон</label>
+              <div class="form-field__control">
+                <input
+                  class="form-field__input"
+                  id="user-tel"
+                  type="tel"
+                  name="user-tel"
+                  pattern="^\+[0-9]{12}"
+                  placeholder=" "
+                  required
+                />
+                <svg class="form-field__icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
             </div>
 
-            <label class="form-field-label" for="user-email">Пошта</label>
-            <div class="form-field">
-              <input
-                class="form-field-input"
-                id="user-email"
-                type="email"
-                name="user-email"
-              />
-              <svg class="form-field-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
+            <div class="modal__form-field form-field">
+              <label class="form-field__label" for="user-email">Пошта</label>
+              <div class="form-field__control">
+                <input
+                  class="form-field__input"
+                  id="user-email"
+                  type="email"
+                  name="user-email"
+                />
+                <svg class="form-field__icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
             </div>
 
             <label class="form-field-label" for="user-comment">Коментар</label>

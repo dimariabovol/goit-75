@@ -1,0 +1,39 @@
+.hero-section {
+  padding: 32px 0 64px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  position: relative;
+  margin-bottom: 24px;
+  color: var(--color-secondary);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.333;
+  text-transform: uppercase;
+}
+
+.hero-title::before {
+  position: absolute;
+  z-index: -1;
+  top: -56px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  background-image: var(--decor-gradient);
+  border-radius: 50%;
+  content: '';
+}
+
+.hero-text {
+  margin-bottom: 40px;
+}
