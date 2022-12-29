@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 100% / 20%;
   }
 
   &__nav {
@@ -26,25 +26,25 @@
     color: var(--color-secondary);
     text-decoration: none;
     text-underline-offset: 2px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &--current {
+      color: var(--color-brand);
+
+      &::after {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        margin-top: 10px;
+        background-color: var(--color-brand);
+        content: '';
+      }
+    }
   }
-}
-
-.header__link:hover {
-  text-decoration: underline;
-}
-
-.header__link--current {
-  color: var(--color-brand);
-}
-
-.header__link--current::after {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  margin-top: 10px;
-  background-color: var(--color-brand);
-  content: '';
 }

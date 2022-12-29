@@ -1,0 +1,14 @@
+.advantages {
+  position: relative;
+}
+
+.advantages::before {
+  position: absolute;
+  z-index: -1;
+  top: 24px;
+  left: 0;
+  width: 600px;
+  height: 160px;
+  background-image: var(--decor-gradient);
+  content: '';
+}

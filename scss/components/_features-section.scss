@@ -1,0 +1,43 @@
+.features {
+  position: relative;
+}
+
+.features::before {
+  position: absolute;
+  z-index: -1;
+  bottom: 24px;
+  right: 0;
+  width: 600px;
+  height: 160px;
+  background-image: var(--decor-gradient);
+  transform: rotate(180deg);
+  content: '';
+}
+
+.features::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 24px;
+  left: 0;
+  width: 224px;
+  height: 224px;
+  background-image: url('../images/decor-dots.png');
+  transform: rotate(180deg);
+  content: '';
+}
+
+.features-list {
+  display: flex;
+  gap: 44px;
+  flex-wrap: wrap;
+}
+
+.features-item {
+  flex-basis: calc((100% - 88px) / 3);
+}
+
+.features-item:nth-child(even) .feature-card {
+  color: var(--color-invert);
+  fill: var(--color-invert);
+  background-color: var(--color-brand);
+}

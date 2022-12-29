@@ -1,0 +1,27 @@
+@each $mb in 8px, 16px, 24px, 32px, 40px {
+  .mb-#{$mb} {
+    margin-bottom: $mb;
+  }
+}
+
+@each $mr in 8px, 16px, 24px, 32px, 40px {
+  .mr-#{$mr} {
+    margin-right: $mr;
+  }
+}
+
+// .mb-8px {
+//   margin-bottom: 8px;
+// }
+
+// .mb-16px {
+//   margin-bottom: 16px;
+// }
+
+// .mb-24px {
+//   margin-bottom: 24px;
+// }
+
+// .mb-32px {
+//   margin-bottom: 32px;
+// }

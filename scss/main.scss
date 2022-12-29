@@ -1,14 +1,22 @@
 /* Utils */
 @import './utils/fonts';
 @import './utils/variables';
+@import './utils/indents';
+@import './utils/mixins';
+@import './utils/placeholders';
 
 /* Base */
 @import './base/base';
 @import './base/reset';
 
 /* Components */
+@import './components/advantage-card';
+@import './components/advantages-section';
 @import './components/button';
+@import './components/feature-card';
+@import './components/features-section';
 @import './components/header';
+@import './components/heading';
 @import './components/hero-section';
 
 /* Layout */
