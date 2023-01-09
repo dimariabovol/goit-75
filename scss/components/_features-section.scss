@@ -32,8 +32,26 @@
   flex-wrap: wrap;
 }
 
+// .features-item {
+//   flex-basis: calc((100% - 88px) / 3);
+
+//   @media (max-width: 1200px) {
+//     flex-basis: calc((100% - 44px) / 2);
+//   }
+
+//   @media (max-width: 768px) {
+//     flex-basis: 100%;
+//   }
+// }
+
 .features-item {
-  flex-basis: calc((100% - 88px) / 3);
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 44px) / 2);
+  }
+
+  @media (min-width: 1200px) {
+    flex-basis: calc((100% - 88px) / 3);
+  }
 }
 
 .features-item:nth-child(even) .feature-card {

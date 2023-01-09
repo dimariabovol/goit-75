@@ -42,20 +42,27 @@
               </li>
               <li><a class="header__link" href="#team">Team</a></li>
             </ul>
+            <button class="header__burger js-open-menu" type="button">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-burger"></use>
+              </svg>
+            </button>
           </nav>
-          <button class="button button--small" type="button">Register</button>
+          <button class="header__button button button--small" type="button">
+            Register
+          </button>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero">
         <div class="container">
-          <div class="hero-container">
-            <div class="hero-content">
-              <h1 class="hero-title">
+          <div class="hero__container">
+            <div class="hero__content">
+              <h1 class="hero__title">
                 Awesome User Interface is what we can apply
               </h1>
-              <p class="hero-text">
+              <p class="hero__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue
                 et eros, pellentesque et. Tristique ullamcorper ac pharetra in
                 nisi sit vivamus lorem.
@@ -67,7 +74,11 @@
                 </svg>
               </button>
             </div>
-            <img src="./images/hero-image.png" alt="Woman is playing tennis" />
+            <img
+              class="hero__image"
+              src="./images/hero-image.png"
+              alt="Woman is playing tennis"
+            />
           </div>
         </div>
       </section>
@@ -280,25 +291,24 @@
             </li>
           </ul>
         </address>
-        <div class="footer__form-field form-field">
-          <label class="form-field__label" for="user-tel">Телефон</label>
-          <div class="form-field__control">
-            <input
-              class="form-field__input"
-              id="user-tel"
-              type="tel"
-              name="user-tel"
-              pattern="^\+[0-9]{12}"
-              placeholder=" "
-              required
-            />
-            <svg class="form-field__icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
-        </div>
       </div>
     </footer>
+
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button class="mobile-menu__close js-close-menu" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul>
+          <li><a class="mobile-menu__link" href="#benefits">Benefits</a></li>
+          <li><a class="mobile-menu__link" href="#features">Features</a></li>
+          <li><a class="mobile-menu__link" href="#about"> About </a></li>
+          <li><a class="mobile-menu__link" href="#team">Team</a></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -397,6 +407,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
